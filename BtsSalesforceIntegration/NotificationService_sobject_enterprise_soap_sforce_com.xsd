@@ -21,7 +21,8 @@
       <extension xmlns:q3="urn:sobject.enterprise.soap.sforce.com" base="q3:sObject">
         <sequence>
           <element minOccurs="0" name="Amount" nillable="true" type="double" />
-          <element minOccurs="0" name="Products_Of_Interest__c" nillable="true" type="string" />
+          <element minOccurs="0" name="Name" nillable="true" type="string" />
+          <element minOccurs="0" name="Type" nillable="true" type="string" />
         </sequence>
       </extension>
     </complexContent>

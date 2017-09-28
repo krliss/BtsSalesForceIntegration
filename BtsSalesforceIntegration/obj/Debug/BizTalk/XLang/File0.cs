@@ -145,7 +145,7 @@ namespace NotificationService
         }
         #endregion // port reflection support
     }
-    //#line 111 "C:\Users\krilis\documents\visual studio 2015\Projects\BtsSalesforceIntegration\BtsSalesforceIntegration\NotificationService.odx"
+    //#line 102 "C:\Users\krilis\Documents\Visual Studio 2015\Projects\BtsSalesforceIntegration\BtsSalesforceIntegration\NotificationService.odx"
     [Microsoft.XLANGs.BaseTypes.ServiceCallTreeAttribute(
         new System.Type[] {
         },
@@ -230,12 +230,12 @@ namespace NotificationService
 
         private const string _symInfo = @"
 <XsymFile>
-<ProcessFlow xmlns:om='http://schemas.microsoft.com/BizTalk/2003/DesignerData'>      <shapeType>RootShape</shapeType>      <ShapeID>6dae3bd8-423d-4a79-b9b7-3d3e40c15272</ShapeID>      
+<ProcessFlow xmlns:om='http://schemas.microsoft.com/BizTalk/2003/DesignerData'>      <shapeType>RootShape</shapeType>      <ShapeID>2d5dc0b3-a0fb-4fa7-95cc-2cd2b2ddba0b</ShapeID>      
 <children>                </children>
   </ProcessFlow><Metadata>
 
 <TrkMetadata>
-<ActionName>'NotificationServiceClient'</ActionName><IsAtomic>0</IsAtomic><Line>111</Line><Position>14</Position><ShapeID>'e211a116-cb8b-44e7-a052-0de295aa0001'</ShapeID>
+<ActionName>'NotificationServiceClient'</ActionName><IsAtomic>0</IsAtomic><Line>102</Line><Position>14</Position><ShapeID>'e211a116-cb8b-44e7-a052-0de295aa0001'</ShapeID>
 </TrkMetadata>
 </Metadata>
 </XsymFile>";
@@ -245,31 +245,31 @@ namespace NotificationService
         private const string _symODXML = @"
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <om:MetaModel MajorVersion='1' MinorVersion='3' Core='2b131234-7959-458d-834f-2dc0769ce683' ScheduleModel='66366196-361d-448d-976f-cab5e87496d2' xmlns:om='http://schemas.microsoft.com/BizTalk/2003/DesignerData'>
-    <om:Element Type='Module' OID='e62530e8-ae35-4bbb-9a46-7f03030bea3b' LowerBound='1.1' HigherBound='29.1'>
+    <om:Element Type='Module' OID='5d771ecb-ba5a-4540-8941-4e3378f3b893'>
         <om:Property Name='ReportToAnalyst' Value='True' />
         <om:Property Name='Name' Value='NotificationService' />
         <om:Property Name='Signal' Value='False' />
-        <om:Element Type='PortType' OID='13fa07a2-5b07-45ca-a67c-341ac9565641' ParentLink='Module_PortType' LowerBound='12.1' HigherBound='19.1'>
+        <om:Element Type='PortType' OID='4e1ffe54-63ba-4f05-8fc7-3554339c93bf' ParentLink='Module_PortType'>
             <om:Property Name='Synchronous' Value='True' />
             <om:Property Name='TypeModifier' Value='Internal' />
             <om:Property Name='ReportToAnalyst' Value='True' />
             <om:Property Name='AnalystComments' Value='&lt;wsdl:portType name=&quot;NotificationPort&quot;/&gt;&#xD;&#xA;' />
             <om:Property Name='Name' Value='NotificationPort' />
             <om:Property Name='Signal' Value='False' />
-            <om:Element Type='OperationDeclaration' OID='61117f98-0026-493f-8f8a-44b6f54f5d74' ParentLink='PortType_OperationDeclaration' LowerBound='14.1' HigherBound='18.1'>
+            <om:Element Type='OperationDeclaration' OID='176a0492-5369-4452-886e-fb41bd8cca48' ParentLink='PortType_OperationDeclaration'>
                 <om:Property Name='OperationType' Value='RequestResponse' />
                 <om:Property Name='ReportToAnalyst' Value='True' />
                 <om:Property Name='AnalystComments' Value='&lt;wsdl:operation name=&quot;notifications&quot;/&gt;&#xD;&#xA;Process a number of notifications.&#xD;&#xA;' />
                 <om:Property Name='Name' Value='notifications' />
                 <om:Property Name='Signal' Value='False' />
-                <om:Element Type='MessageRef' OID='611ac8a3-d2c0-448f-8a80-2af7b8e1a4ba' ParentLink='OperationDeclaration_RequestMessageRef' LowerBound='16.13' HigherBound='16.33'>
+                <om:Element Type='MessageRef' OID='32625224-4c32-43b0-9d00-01b56e5ba060' ParentLink='OperationDeclaration_RequestMessageRef'>
                     <om:Property Name='Ref' Value='NotificationService.notificationsRequest' />
                     <om:Property Name='ReportToAnalyst' Value='True' />
                     <om:Property Name='AnalystComments' Value='&lt;wsdl:input message=&quot;http://soap.sforce.com/2005/09/outbound:notificationsRequest&quot;/&gt;&#xD;&#xA;' />
                     <om:Property Name='Name' Value='Request' />
                     <om:Property Name='Signal' Value='False' />
                 </om:Element>
-                <om:Element Type='MessageRef' OID='ce65f38e-831d-46e1-bd26-a314f4f0a9c1' ParentLink='OperationDeclaration_ResponseMessageRef' LowerBound='16.35' HigherBound='16.56'>
+                <om:Element Type='MessageRef' OID='974ac740-4e72-4a30-9b13-80e84d762fc9' ParentLink='OperationDeclaration_ResponseMessageRef'>
                     <om:Property Name='Ref' Value='NotificationService.notificationsResponse' />
                     <om:Property Name='ReportToAnalyst' Value='True' />
                     <om:Property Name='AnalystComments' Value='&lt;wsdl:output message=&quot;http://soap.sforce.com/2005/09/outbound:notificationsResponse&quot;/&gt;&#xD;&#xA;' />
@@ -278,13 +278,13 @@ namespace NotificationService
                 </om:Element>
             </om:Element>
         </om:Element>
-        <om:Element Type='MultipartMessageType' OID='b7bcb2f0-dd21-41d7-9d17-fac6c9ec68ac' ParentLink='Module_MessageType' LowerBound='4.1' HigherBound='8.1'>
+        <om:Element Type='MultipartMessageType' OID='f6ae9121-1167-4650-ad75-432262b0f07a' ParentLink='Module_MessageType'>
             <om:Property Name='TypeModifier' Value='Internal' />
             <om:Property Name='ReportToAnalyst' Value='True' />
             <om:Property Name='AnalystComments' Value='&lt;wsdl:message name=&quot;notificationsRequest&quot;/&gt;&#xD;&#xA;' />
             <om:Property Name='Name' Value='notificationsRequest' />
             <om:Property Name='Signal' Value='False' />
-            <om:Element Type='PartDeclaration' OID='48b5a883-96f8-4838-8427-a8abf457862d' ParentLink='MultipartMessageType_PartDeclaration' LowerBound='6.1' HigherBound='7.1'>
+            <om:Element Type='PartDeclaration' OID='4f077e13-1a9b-4000-9bdb-1807255d8d4f' ParentLink='MultipartMessageType_PartDeclaration'>
                 <om:Property Name='ClassName' Value='NotificationService.NotificationService_soap_sforce_com_2005_09_outbound.notifications' />
                 <om:Property Name='IsBodyPart' Value='True' />
                 <om:Property Name='ReportToAnalyst' Value='True' />
@@ -293,13 +293,13 @@ namespace NotificationService
                 <om:Property Name='Signal' Value='False' />
             </om:Element>
         </om:Element>
-        <om:Element Type='MultipartMessageType' OID='bf2ca873-a351-488c-aa79-e568b0e8cd94' ParentLink='Module_MessageType' LowerBound='8.1' HigherBound='12.1'>
+        <om:Element Type='MultipartMessageType' OID='1f1382a3-4691-40a9-a316-462d0c1da8c5' ParentLink='Module_MessageType'>
             <om:Property Name='TypeModifier' Value='Internal' />
             <om:Property Name='ReportToAnalyst' Value='True' />
             <om:Property Name='AnalystComments' Value='&lt;wsdl:message name=&quot;notificationsResponse&quot;/&gt;&#xD;&#xA;' />
             <om:Property Name='Name' Value='notificationsResponse' />
             <om:Property Name='Signal' Value='False' />
-            <om:Element Type='PartDeclaration' OID='a0f4882f-4c60-4117-bf3e-b387b6d86c62' ParentLink='MultipartMessageType_PartDeclaration' LowerBound='10.1' HigherBound='11.1'>
+            <om:Element Type='PartDeclaration' OID='7daef465-9114-4578-8278-b96f1c05266a' ParentLink='MultipartMessageType_PartDeclaration'>
                 <om:Property Name='ClassName' Value='NotificationService.NotificationService_soap_sforce_com_2005_09_outbound.notificationsResponse' />
                 <om:Property Name='IsBodyPart' Value='True' />
                 <om:Property Name='ReportToAnalyst' Value='True' />
@@ -308,7 +308,7 @@ namespace NotificationService
                 <om:Property Name='Signal' Value='False' />
             </om:Element>
         </om:Element>
-        <om:Element Type='ServiceDeclaration' OID='1e71a763-901b-47e6-a034-3605d3333cfe' ParentLink='Module_ServiceDeclaration' LowerBound='19.1' HigherBound='28.1'>
+        <om:Element Type='ServiceDeclaration' OID='ddeac126-40ee-4f82-90c9-bb6a5d2cdcf6' ParentLink='Module_ServiceDeclaration'>
             <om:Property Name='InitializedTransactionType' Value='False' />
             <om:Property Name='IsInvokable' Value='True' />
             <om:Property Name='TypeModifier' Value='Internal' />
@@ -316,17 +316,8 @@ namespace NotificationService
             <om:Property Name='AnalystComments' Value='&lt;wsdl:service name=&quot;NotificationService&quot;/&gt;&#xD;&#xA;Notification Service Implementation&#xD;&#xA;' />
             <om:Property Name='Name' Value='NotificationServiceClient' />
             <om:Property Name='Signal' Value='False' />
-            <om:Element Type='ServiceBody' OID='6dae3bd8-423d-4a79-b9b7-3d3e40c15272' ParentLink='ServiceDeclaration_ServiceBody'>
+            <om:Element Type='ServiceBody' OID='2d5dc0b3-a0fb-4fa7-95cc-2cd2b2ddba0b' ParentLink='ServiceDeclaration_ServiceBody'>
                 <om:Property Name='Signal' Value='False' />
-            </om:Element>
-            <om:Element Type='VariableDeclaration' OID='180dbb70-802d-4ca5-be92-26cf8593a052' ParentLink='ServiceDeclaration_VariableDeclaration' LowerBound='22.1' HigherBound='23.1'>
-                <om:Property Name='InitialValue' Value='true' />
-                <om:Property Name='UseDefaultConstructor' Value='False' />
-                <om:Property Name='Type' Value='System.Boolean' />
-                <om:Property Name='ParamDirection' Value='In' />
-                <om:Property Name='ReportToAnalyst' Value='True' />
-                <om:Property Name='Name' Value='Variable_1' />
-                <om:Property Name='Signal' Value='True' />
             </om:Element>
         </om:Element>
     </om:Element>
@@ -399,13 +390,9 @@ namespace NotificationService
             public override void Finally()
             {
                 NotificationServiceClient __svc__ = (NotificationServiceClient)_service;
-                __NotificationServiceClient_1 __ctx1__ = (__NotificationServiceClient_1)(__svc__._stateMgrs[1]);
-
                 base.Finally();
             }
 
-            [Microsoft.XLANGs.Core.UserVariableAttribute("Variable_1")]
-            internal System.Boolean __Variable_1;
         }
 
         private static Microsoft.XLANGs.Core.CorrelationType[] _correlationTypes = null;
@@ -488,7 +475,7 @@ namespace NotificationService
         };
 
         public static int[] __progressLocation0 = new int[] { 0,0,0,1,1,};
-        public static int[] __progressLocation1 = new int[] { 0,0,0,1,1,1,1,};
+        public static int[] __progressLocation1 = new int[] { 0,0,1,1,1,1,};
 
         public static int[][] __progressLocations = new int[2] [] {__progressLocation0,__progressLocation1};
         public override int[][] ProgressLocations {get {return __progressLocations;} }
@@ -497,8 +484,8 @@ namespace NotificationService
         {
             Microsoft.XLANGs.Core.Segment __seg__ = _segments[0];
             Microsoft.XLANGs.Core.Context __ctx__ = (Microsoft.XLANGs.Core.Context)_stateMgrs[0];
-            __NotificationServiceClient_1 __ctx1__ = (__NotificationServiceClient_1)_stateMgrs[1];
             __NotificationServiceClient_root_0 __ctx0__ = (__NotificationServiceClient_root_0)_stateMgrs[0];
+            __NotificationServiceClient_1 __ctx1__ = (__NotificationServiceClient_1)_stateMgrs[1];
 
             switch (__seg__.Progress)
             {
@@ -539,13 +526,12 @@ namespace NotificationService
         {
             Microsoft.XLANGs.Core.Segment __seg__ = _segments[1];
             Microsoft.XLANGs.Core.Context __ctx__ = (Microsoft.XLANGs.Core.Context)_stateMgrs[1];
-            __NotificationServiceClient_1 __ctx1__ = (__NotificationServiceClient_1)_stateMgrs[1];
             __NotificationServiceClient_root_0 __ctx0__ = (__NotificationServiceClient_root_0)_stateMgrs[0];
+            __NotificationServiceClient_1 __ctx1__ = (__NotificationServiceClient_1)_stateMgrs[1];
 
             switch (__seg__.Progress)
             {
             case 0:
-                __ctx1__.__Variable_1 = default(System.Boolean);
                 __ctx__.PrologueCompleted = true;
                 if ( !PostProgressInc( __seg__, __ctx__, 1 ) )
                     return Microsoft.XLANGs.Core.StopConditions.Paused;
@@ -558,29 +544,24 @@ namespace NotificationService
                     return Microsoft.XLANGs.Core.StopConditions.InBreakpoint;
                 goto case 2;
             case 2:
-                __ctx1__.__Variable_1 = true;
-                if ( !PostProgressInc( __seg__, __ctx__, 3 ) )
-                    return Microsoft.XLANGs.Core.StopConditions.Paused;
-                goto case 3;
-            case 3:
-                if ( !PreProgressInc( __seg__, __ctx__, 4 ) )
+                if ( !PreProgressInc( __seg__, __ctx__, 3 ) )
                     return Microsoft.XLANGs.Core.StopConditions.Paused;
                 Tracker.FireEvent(__eventLocations[1],__eventData[1],_stateMgrs[1].TrackDataStream );
                 if (IsDebugged)
                     return Microsoft.XLANGs.Core.StopConditions.InBreakpoint;
-                goto case 4;
-            case 4:
+                goto case 3;
+            case 3:
                 if (!__ctx1__.CleanupAndPrepareToCommit(__seg__))
                     return Microsoft.XLANGs.Core.StopConditions.Blocked;
-                if ( !PostProgressInc( __seg__, __ctx__, 5 ) )
+                if ( !PostProgressInc( __seg__, __ctx__, 4 ) )
                     return Microsoft.XLANGs.Core.StopConditions.Paused;
-                goto case 5;
-            case 5:
-                if ( !PreProgressInc( __seg__, __ctx__, 6 ) )
+                goto case 4;
+            case 4:
+                if ( !PreProgressInc( __seg__, __ctx__, 5 ) )
                     return Microsoft.XLANGs.Core.StopConditions.Paused;
                 __ctx1__.OnCommit();
-                goto case 6;
-            case 6:
+                goto case 5;
+            case 5:
                 __seg__.SegmentDone();
                 _segments[0].PredecessorDone(this);
                 break;
