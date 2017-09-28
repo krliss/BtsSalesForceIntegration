@@ -1,0 +1,200 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="e62530e8-ae35-4bbb-9a46-7f03030bea3b" LowerBound="1.1" HigherBound="41.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="NotificationService" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="13fa07a2-5b07-45ca-a67c-341ac9565641" ParentLink="Module_PortType" LowerBound="12.1" HigherBound="19.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:portType name=&quot;NotificationPort&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="NotificationPort" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="61117f98-0026-493f-8f8a-44b6f54f5d74" ParentLink="PortType_OperationDeclaration" LowerBound="14.1" HigherBound="18.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;notifications&quot;/&gt;&#xD;&#xA;Process a number of notifications.&#xD;&#xA;" />
+                <om:Property Name="Name" Value="notifications" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="611ac8a3-d2c0-448f-8a80-2af7b8e1a4ba" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="16.13" HigherBound="16.79">
+                    <om:Property Name="Ref" Value="NotificationService.NotificationService_soap_sforce_com_2005_09_outbound.notifications" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://soap.sforce.com/2005/09/outbound:notificationsRequest&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="ce65f38e-831d-46e1-bd26-a314f4f0a9c1" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="16.81" HigherBound="16.155">
+                    <om:Property Name="Ref" Value="NotificationService.NotificationService_soap_sforce_com_2005_09_outbound.notificationsResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://soap.sforce.com/2005/09/outbound:notificationsResponse&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="b7bcb2f0-dd21-41d7-9d17-fac6c9ec68ac" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;notificationsRequest&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="notificationsRequest" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="48b5a883-96f8-4838-8427-a8abf457862d" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="NotificationService.NotificationService_soap_sforce_com_2005_09_outbound.notifications" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;request&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="@request" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="bf2ca873-a351-488c-aa79-e568b0e8cd94" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;notificationsResponse&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="notificationsResponse" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="a0f4882f-4c60-4117-bf3e-b387b6d86c62" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="NotificationService.NotificationService_soap_sforce_com_2005_09_outbound.notificationsResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;response&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="@response" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="1e71a763-901b-47e6-a034-3605d3333cfe" ParentLink="Module_ServiceDeclaration" LowerBound="19.1" HigherBound="40.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:service name=&quot;NotificationService&quot;/&gt;&#xD;&#xA;Notification Service Implementation&#xD;&#xA;" />
+            <om:Property Name="Name" Value="NotificationServiceClient" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="6dae3bd8-423d-4a79-b9b7-3d3e40c15272" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="669f89aa-e925-44af-9730-ceec95e64d31" ParentLink="ServiceBody_Statement" LowerBound="28.1" HigherBound="30.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="SalesforceNotificationPort" />
+                    <om:Property Name="MessageName" Value="NotificationMessage" />
+                    <om:Property Name="OperationName" Value="notifications" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ReceiveNotificationMessage" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="a626af82-1aad-4b7c-8fe3-6fd0836268ad" ParentLink="ServiceBody_Statement" LowerBound="30.1" HigherBound="36.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstructNotificationResponse" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Transform" OID="e33ea48c-617d-4f22-82a3-a358f67ddc97" ParentLink="ComplexStatement_Statement" LowerBound="33.1" HigherBound="35.1">
+                        <om:Property Name="ClassName" Value="BtsSalesforceIntegration.MapNotificationResponse" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Transform_1" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessagePartRef" OID="cdbc7d48-baaa-412d-8afe-95abe2c5ebae" ParentLink="Transform_InputMessagePartRef" LowerBound="34.97" HigherBound="34.116">
+                            <om:Property Name="MessageRef" Value="NotificationMessage" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_1" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessagePartRef" OID="e036212e-91ce-4a23-9b77-26dd13a0ea61" ParentLink="Transform_OutputMessagePartRef" LowerBound="34.28" HigherBound="34.43">
+                            <om:Property Name="MessageRef" Value="NotificationAck" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_2" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="4aea8571-45f9-42b3-9a27-d25a19fcacac" ParentLink="Construct_MessageRef" LowerBound="31.23" HigherBound="31.38">
+                        <om:Property Name="Ref" Value="NotificationAck" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="8a11c7f7-c50d-4e45-bce6-a3bbadc241f4" ParentLink="ServiceBody_Statement" LowerBound="36.1" HigherBound="38.1">
+                    <om:Property Name="PortName" Value="SalesforceNotificationPort" />
+                    <om:Property Name="MessageName" Value="NotificationAck" />
+                    <om:Property Name="OperationName" Value="notifications" />
+                    <om:Property Name="OperationMessageName" Value="Response" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="SendNotificationAck" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="1cbf44cf-ee39-4d92-8d2e-16f1c8c917b2" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="22.1" HigherBound="24.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="12" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="NotificationService.NotificationPort" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SalesforceNotificationPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="7a6d8cbb-7bbd-4fe8-a885-90e73519ce4d" ParentLink="PortDeclaration_CLRAttribute" LowerBound="22.1" HigherBound="23.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="91f1af0d-0d93-42d9-a2e0-94f8d2467c0f" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="24.1" HigherBound="25.1">
+                <om:Property Name="Type" Value="NotificationService.NotificationService_soap_sforce_com_2005_09_outbound.notifications" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="NotificationMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="3524a688-1509-45de-8bfa-2e185fb2e9b0" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="NotificationService.NotificationService_soap_sforce_com_2005_09_outbound.notificationsResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="NotificationAck" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module NotificationService
+{
+    internal messagetype notificationsRequest
+    {
+        body NotificationService_soap_sforce_com_2005_09_outbound.notifications @request;
+    };
+    internal messagetype notificationsResponse
+    {
+        body NotificationService_soap_sforce_com_2005_09_outbound.notificationsResponse @response;
+    };
+    internal porttype NotificationPort
+    {
+        requestresponse notifications
+        {
+            NotificationService_soap_sforce_com_2005_09_outbound.notifications, NotificationService_soap_sforce_com_2005_09_outbound.notificationsResponse
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service NotificationServiceClient
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements NotificationPort SalesforceNotificationPort;
+        message NotificationService_soap_sforce_com_2005_09_outbound.notifications NotificationMessage;
+        message NotificationService_soap_sforce_com_2005_09_outbound.notificationsResponse NotificationAck;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("669f89aa-e925-44af-9730-ceec95e64d31")]
+            activate receive (SalesforceNotificationPort.notifications, NotificationMessage);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("a626af82-1aad-4b7c-8fe3-6fd0836268ad")]
+            construct NotificationAck
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("e33ea48c-617d-4f22-82a3-a358f67ddc97")]
+                transform (NotificationAck) = BtsSalesforceIntegration.MapNotificationResponse (NotificationMessage);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("8a11c7f7-c50d-4e45-bce6-a3bbadc241f4")]
+            send (SalesforceNotificationPort.notifications, NotificationAck);
+        }
+    }
+}
+

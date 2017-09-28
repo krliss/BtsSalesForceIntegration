@@ -1,0 +1,4 @@
+C:\Users\krilis\documents\visual studio 2015\Projects\BtsSalesforceIntegration\BtsSalesforceIntegration\bin\Debug\BtsSalesforceIntegration.dll
+C:\Users\krilis\documents\visual studio 2015\Projects\BtsSalesforceIntegration\BtsSalesforceIntegration\bin\Debug\BtsSalesforceIntegration.pdb
+C:\Users\krilis\documents\visual studio 2015\Projects\BtsSalesforceIntegration\BtsSalesforceIntegration\obj\Debug\BtsSalesforceIntegration.dll
+C:\Users\krilis\documents\visual studio 2015\Projects\BtsSalesforceIntegration\BtsSalesforceIntegration\obj\Debug\BtsSalesforceIntegration.pdb

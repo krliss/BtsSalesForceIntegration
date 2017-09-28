@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<schema elementFormDefault="qualified" targetNamespace="http://soap.sforce.com/2005/09/outbound" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation=".\NotificationService_enterprise_soap_sforce_com.xsd" namespace="urn:enterprise.soap.sforce.com" />
+  <import schemaLocation=".\NotificationService_sobject_enterprise_soap_sforce_com.xsd" namespace="urn:sobject.enterprise.soap.sforce.com" />
+  <element name="notifications">
+    <complexType>
+      <sequence>
+        <element name="OrganizationId" xmlns:q1="urn:enterprise.soap.sforce.com" type="q1:ID" />
+        <element name="ActionId" xmlns:q2="urn:enterprise.soap.sforce.com" type="q2:ID" />
+        <element name="SessionId" nillable="true" type="string" />
+        <element name="EnterpriseUrl" type="string" />
+        <element name="PartnerUrl" type="string" />
+        <element maxOccurs="100" name="Notification" xmlns:q3="http://soap.sforce.com/2005/09/outbound" type="q3:OpportunityNotification" />
+      </sequence>
+    </complexType>
+  </element>
+  <complexType name="OpportunityNotification">
+    <sequence>
+      <element name="Id" xmlns:q4="urn:enterprise.soap.sforce.com" type="q4:ID" />
+      <element name="sObject" xmlns:q5="urn:sobject.enterprise.soap.sforce.com" type="q5:Opportunity" />
+    </sequence>
+  </complexType>
+  <element name="notificationsResponse">
+    <complexType>
+      <sequence>
+        <element name="Ack" type="boolean" />
+      </sequence>
+    </complexType>
+  </element>
+</schema>
