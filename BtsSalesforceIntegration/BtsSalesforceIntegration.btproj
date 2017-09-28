@@ -85,6 +85,11 @@
     </Schema>
   </ItemGroup>
   <ItemGroup>
+    <Map Include="MapNotificationResponse.btm">
+      <TypeName>MapNotificationResponse</TypeName>
+      <Namespace>BtsSalesforceIntegration</Namespace>
+      <SubType>Task</SubType>
+    </Map>
     <Content Include="NotificationService.BindingInfo.xml" />
     <XLang Include="NotificationService.odx">
       <TypeName>NotificationService</TypeName>
