@@ -1,0 +1,5 @@
+C:\Users\krilis\documents\visual studio 2015\Projects\BtsSalesforceIntegration\Microsoft.BizTalk.Adapter.Behaviors\obj\Debug\Microsoft.BizTalk.Adapter.Behaviors.csprojResolveAssemblyReference.cache
+C:\Users\krilis\Documents\Visual Studio 2015\Projects\BtsSalesforceIntegration\Microsoft.BizTalk.Adapter.Behaviors\bin\Debug\Microsoft.BizTalk.Adapter.Behaviors.dll
+C:\Users\krilis\Documents\Visual Studio 2015\Projects\BtsSalesforceIntegration\Microsoft.BizTalk.Adapter.Behaviors\bin\Debug\Microsoft.BizTalk.Adapter.Behaviors.pdb
+C:\Users\krilis\Documents\Visual Studio 2015\Projects\BtsSalesforceIntegration\Microsoft.BizTalk.Adapter.Behaviors\obj\Debug\Microsoft.BizTalk.Adapter.Behaviors.dll
+C:\Users\krilis\Documents\Visual Studio 2015\Projects\BtsSalesforceIntegration\Microsoft.BizTalk.Adapter.Behaviors\obj\Debug\Microsoft.BizTalk.Adapter.Behaviors.pdb
