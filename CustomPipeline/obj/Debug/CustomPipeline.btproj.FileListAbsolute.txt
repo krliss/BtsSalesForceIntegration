@@ -1,0 +1,5 @@
+C:\Users\krilis\documents\visual studio 2015\Projects\BtsSalesforceIntegration\CustomPipeline\bin\Debug\CustomPipeline.dll
+C:\Users\krilis\documents\visual studio 2015\Projects\BtsSalesforceIntegration\CustomPipeline\bin\Debug\CustomPipeline.pdb
+C:\Users\krilis\documents\visual studio 2015\Projects\BtsSalesforceIntegration\CustomPipeline\bin\Debug\Microsoft.Practices.ESB.Namespace.PipelineComponents.dll
+C:\Users\krilis\documents\visual studio 2015\Projects\BtsSalesforceIntegration\CustomPipeline\obj\Debug\CustomPipeline.dll
+C:\Users\krilis\documents\visual studio 2015\Projects\BtsSalesforceIntegration\CustomPipeline\obj\Debug\CustomPipeline.pdb
