@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BtsSalesforceIntegration", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.BizTalk.Adapter.Behaviors", "Microsoft.BizTalk.Adapter.Behaviors\Microsoft.BizTalk.Adapter.Behaviors.csproj", "{450A5B58-39D1-4DA0-B7DA-6142E9B47EA8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomPipeline", "CustomPipeline\CustomPipeline.btproj", "{78A56504-0302-44EC-82BB-571B6E448156}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,12 @@ Global
 		{450A5B58-39D1-4DA0-B7DA-6142E9B47EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{450A5B58-39D1-4DA0-B7DA-6142E9B47EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{450A5B58-39D1-4DA0-B7DA-6142E9B47EA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78A56504-0302-44EC-82BB-571B6E448156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78A56504-0302-44EC-82BB-571B6E448156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78A56504-0302-44EC-82BB-571B6E448156}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{78A56504-0302-44EC-82BB-571B6E448156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78A56504-0302-44EC-82BB-571B6E448156}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78A56504-0302-44EC-82BB-571B6E448156}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
