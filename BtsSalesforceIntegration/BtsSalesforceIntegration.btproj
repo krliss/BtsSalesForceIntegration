@@ -112,6 +112,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="NotificationService.BindingInfo.xml" />
+    <Map Include="QueryResult_Orders.btm">
+      <TypeName>QueryResult_Orders</TypeName>
+      <Namespace>BtsSalesforceIntegration</Namespace>
+      <SubType>Task</SubType>
+    </Map>
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo.xml" />
     <XLang Include="NotificationService.odx">
       <TypeName>NotificationService</TypeName>
