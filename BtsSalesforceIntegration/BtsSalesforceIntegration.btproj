@@ -112,6 +112,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="NotificationService.BindingInfo.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo.xml" />
     <XLang Include="NotificationService.odx">
       <TypeName>NotificationService</TypeName>
       <Namespace>BtsSalesforceIntegration</Namespace>
@@ -122,6 +123,23 @@
   <ItemGroup>
     <Schema Include="QueryResult.xsd">
       <TypeName>QueryResult</TypeName>
+      <Namespace>BtsSalesforceIntegration</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="InsertOrdersSimpleTypeArray.xsd">
+      <TypeName>InsertOrdersSimpleTypeArray</TypeName>
+      <Namespace>BtsSalesforceIntegration</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="InsertOrdersTable.dbo.xsd">
+      <TypeName>InsertOrdersTable_dbo</TypeName>
+      <Namespace>BtsSalesforceIntegration</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="InsertOrdersTableOperation.dbo.OrderDetails.xsd">
+      <TypeName>InsertOrdersTableOperation_dbo_OrderDetails</TypeName>
       <Namespace>BtsSalesforceIntegration</Namespace>
       <SubType>Task</SubType>
     </Schema>
