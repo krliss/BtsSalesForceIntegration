@@ -8,7 +8,6 @@ namespace BtsSalesforceIntegration {
     [SchemaType(SchemaTypeEnum.Document)]
     [Schema(@"http://BtsSalesforceIntegration.QueryRequest",@"QueryRequest")]
     [Microsoft.XLANGs.BaseTypes.PropertyAttribute(typeof(global::BtsSalesforceIntegration.PropertySchema.Query), XPath = @"/*[local-name()='QueryRequest' and namespace-uri()='http://BtsSalesforceIntegration.QueryRequest']/*[local-name()='Query' and namespace-uri()='']", XsdType = @"string")]
-    [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute(typeof(System.String), "Query", XPath = @"/*[local-name()='QueryRequest' and namespace-uri()='http://BtsSalesforceIntegration.QueryRequest']/*[local-name()='Query' and namespace-uri()='']", XsdType = @"string")]
     [System.SerializableAttribute()]
     [SchemaRoots(new string[] {@"QueryRequest"})]
     [Microsoft.XLANGs.BaseTypes.SchemaReference(@"BtsSalesforceIntegration.PropertySchema.PropertySchema", typeof(global::BtsSalesforceIntegration.PropertySchema.PropertySchema))]
@@ -32,7 +31,6 @@ namespace BtsSalesforceIntegration {
       <xs:appinfo>
         <b:properties>
           <b:property name=""ns0:Query"" xpath=""/*[local-name()='QueryRequest' and namespace-uri()='http://BtsSalesforceIntegration.QueryRequest']/*[local-name()='Query' and namespace-uri()='']"" />
-          <b:property distinguished=""true"" xpath=""/*[local-name()='QueryRequest' and namespace-uri()='http://BtsSalesforceIntegration.QueryRequest']/*[local-name()='Query' and namespace-uri()='']"" />
         </b:properties>
       </xs:appinfo>
     </xs:annotation>

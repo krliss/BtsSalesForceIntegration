@@ -47,7 +47,7 @@ namespace CustomPipeline
 "Name\" _locID=\"4\" Name=\"ResolveParty\" minOccurs=\"0\" maxOccurs=\"-1\" execMethod=\"All\" stageId=\"9d0e410e"+
 "-4cce-4536-83fa-4a5040674ad6\" />      <Components />    </Stage>  </Stages></Document>";
         
-        private const string _versionDependentGuid = "b64dc91f-28e8-44f5-9e6d-b46b450b5039";
+        private const string _versionDependentGuid = "4c337219-ddae-4538-afd6-ac4422fbaa78";
         
         public CustomPipeline()
         {
